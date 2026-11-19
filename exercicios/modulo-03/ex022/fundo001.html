@@ -3,14 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Papel de Parede</title>
+    <title>Teste de Papel de Parede</title>
     <style>
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+
         body {
+            white-space: nowrap;
             background-image: url('imagens/wallpaper001.jpg');
+        }
+
+        div.qudrado {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+           
+        }
+
+        div#q1 {
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+
+        div#q2 {
+            background-image: url('imagens/wallpaper002.jpg');
+        }
+
+        div#q3 {
+            background-image: url('imagens/wallpaper003.jpg');
         }
     </style>
 </head>
 <body>
-    <h1>Papel de parede</h1>
+    <div class="container">
+    <div class="qudrado" id="q1">Papel de parede</div>
+
+    <div class="qudrado" id="q2"> </div>
+
+    <div class="qudrado" id="q3"> </div>
+    </div>
 </body>
 </html>
